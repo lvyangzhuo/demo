@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * @author lyz
@@ -16,13 +17,12 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Gril {
+public class SysRole implements Serializable {
 
     @Id
     @GeneratedValue
-    private int id;
-
-    private int age;
+    private Long id;
 
     private String name;
+
 }
