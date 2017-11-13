@@ -1,5 +1,6 @@
-package com.example.demo;
+package com.example.service;
 
+import com.example.domain.SysUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
