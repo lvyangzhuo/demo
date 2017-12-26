@@ -52,7 +52,7 @@ public class GirlController {
                            @RequestParam(value = "age") Integer age,
                            @RequestParam(value = "cupSize") String cupSize) {
         Girl girl = new Girl();
-        girl.setCupSize(cupSize);
+        girl.setCupSize(cupSize.replaceAll("\\s*",""));
         girl.setId(id);
         girl.setAge(age);
         return null;
@@ -63,6 +63,8 @@ public class GirlController {
     public Result getGirl(@PathVariable("id") Long id) {
         return ResultUtil.success(girlService.getGirl(id));
     }
+
+
 
 
 }

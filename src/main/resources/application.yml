@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: hello-service
   profiles:
     active: dev
   thymeleaf:
@@ -16,6 +18,9 @@ spring:
       ddl-auto: update
     show-sql: true
 server:
-  port: 8080
+  port: 8081
 logging:
   level: info
+management:
+  security:
+    enabled: false
