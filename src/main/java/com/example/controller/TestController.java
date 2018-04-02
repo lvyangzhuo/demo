@@ -29,8 +29,7 @@ public class TestController {
     @RequestMapping("/hello")
     @ResponseBody
     public String thread() {
-//        ServiceInstance instance = client.getLocalServiceInstance();
-//        log.info("/hello,host:" + instance.getHost() + ",service_id:" + instance.getServiceId());
+        System.out.println("进来了");
         return "hello word";
     }
 
